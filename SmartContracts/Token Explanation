@@ -1,0 +1,2 @@
+tFee and tBurn is not defined in _reflectFee function.
+tLiquidity and tburn is not defined in _getTValues function.
