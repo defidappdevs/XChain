@@ -18,6 +18,7 @@ import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
 import Menu from '../components/Menu'
+import Homepage from './Homepage/Homepage'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -127,6 +128,7 @@ export default function App() {
                   <Popups />
                   <Web3ReactManager>
                     <Switch>
+                      <Route exact strict path= "/homepage" component={Homepage} />
                       <Route exact strict path="/swap" component={Swap} />
                       <Route exact strict path="/find" component={PoolFinder} />
                       <Route exact strict path="/pool" component={Pool} />

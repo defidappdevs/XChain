@@ -6,6 +6,7 @@ import TranslatedText from '../TranslatedText'
 
 const StyledNav = styled.div`
   margin-bottom: 40px;
+  
 `
 
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (

@@ -1,14 +1,18 @@
-import { MenuEntry } from '@pantherswap-libs/uikit'
+ import { MenuEntry } from '@pantherswap-libs/uikit'
+// import {MenuEntry}  from  '/home/chandrabhushankumar/Project/Pantherswap/panther-frontend-dex-/panther-uikit'
+
+
 
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pantherswap.com/',
+    href: '/homepage' 
+  // href: 'https://pantherswap.com/' 
   },
   {
     label: 'Trade',
-    icon: 'TradeIcon',
+    icon: 'TradeIcon', 
     initialOpenState: true,
     items: [
       {
