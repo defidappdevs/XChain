@@ -1,5 +1,4 @@
  import { MenuEntry } from '@pantherswap-libs/uikit'
-// import {MenuEntry}  from  '/home/chandrabhushankumar/Project/Pantherswap/panther-frontend-dex-/panther-uikit'
 
 
 
@@ -28,32 +27,37 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pantherswap.com/farms',
+    href:'./farms',
+  // href: 'https://pantherswap.com/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://pantherswap.com/pools',
+    href: './pools',
+   // href: 'https://pantherswap.com/pools',
   },
-  {
-    label: 'Jungles',
-    icon: 'JungleIcon',
-    href: 'https://pantherswap.com/jungles',
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pantherswap.com/lottery',
-  },
-  {
-    label: 'IPO',
-    icon: 'IfoIcon',
-    href: 'https://pantherswap.com/ipo',
-  },
+  // {
+  //   label: 'Jungles',
+  //   icon: 'JungleIcon',
+  //   href:'./jungles',
+  //  // href: 'https://pantherswap.com/jungles',
+  // },
+ // {
+  //  label: 'Lottery',
+   // icon: 'TicketIcon',
+  //  href: 'https://pantherswap.com/lottery',
+ // },
+ // {
+  //  label: 'IPO',
+   // icon: 'IfoIcon',
+  //  href: 'https://pantherswap.com/ipo',
+  // },
+
   {
     label: 'Referrals',
     icon: 'ReferralIcon',
-    href: 'https://pantherswap.com/referrals',
+    href: './referals'
+  //  href: 'https://pantherswap.com/referrals',
   },
   {
     label: 'Audits',

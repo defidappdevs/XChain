@@ -12,6 +12,15 @@ const Card = styled.div<any>`
 `
 export default Card
 
+export const FarmsCard = styled(Card)`
+  border: 1px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:auto;
+  width:35%;
+  margin:7px;
+`
+
+
 export const LightCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.invertedContrast};
   background-color: ${({ theme }) => theme.colors.invertedContrast};

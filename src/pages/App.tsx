@@ -13,12 +13,17 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import Swap from './Swap'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
+import {RedirectPathToFarmsOnly}  from './Farms/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
 import Menu from '../components/Menu'
 import Homepage from './Homepage/Homepage'
+import Farms  from './Farms'
+import Pools from './Pools/Pools'
+import Jungles from './Jungles/Jungles'
+import Referals from './Referals/Referals'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -129,6 +134,10 @@ export default function App() {
                   <Web3ReactManager>
                     <Switch>
                       <Route exact strict path= "/homepage" component={Homepage} />
+                      <Route exact strict path="/farms"    component={Farms} />
+                      <Route exact strict path= "/pools"  component={Pools} />
+                      <Route exact strict path="/jungles" component={Jungles} />
+                      <Route exact strict path ="/referals" component={Referals} />
                       <Route exact strict path="/swap" component={Swap} />
                       <Route exact strict path="/find" component={PoolFinder} />
                       <Route exact strict path="/pool" component={Pool} />
@@ -141,6 +150,7 @@ export default function App() {
                       <Route exact strict path="/remove/:tokens" component={RedirectOldRemoveLiquidityPathStructure} />
 
                       <Route component={RedirectPathToSwapOnly} />
+                      <Route component={RedirectPathToFarmsOnly} />
                     </Switch>
                   </Web3ReactManager>
                   <Marginer />
