@@ -1,14 +1,38 @@
 import React from 'react';
-import './Homepage.css'
+import HomePageHeader from 'components/HomePageHeader';
+import Homepagestackedcard from 'components/HomePage/Homepagestackedcard';
+import { Flex } from '@pantherswap-libs/uikit';
+import Crosschainstates from 'components/HomePage/Crosschainstates';
+import HomepageTvl from 'components/HomePage/HomepageTvl';
+import HomepageDex from 'components/HomePage/HomepageDex';
+import HomeAnnouncement from 'components/HomePage/HomeAnnouncement';
 
+const Homepage =()=>{
+    return(
+        <>
+        <HomePageHeader />
+        <Flex style={{width:"100%"}}>
+            <Homepagestackedcard />
+            <Crosschainstates />
+        </Flex>
+        <Flex style={{width:"100%"}}>
+            <HomepageTvl />
+            <HomepageDex />
+         </Flex>
+         <Flex style={{width:"100%",display:"flex", alignItems:"start"}}>
+          <HomeAnnouncement />
+         </Flex>
+        
+       
+            
+       
+            
+             
+                 
 
-export default class Homepage extends React.PureComponent{
-    render(){
-        return(
-            <div className = "pagewrapper">
-               hi
-               
-            </div>
-        )
-    }
+       
+        </>
+    )
 }
+
+export default Homepage 

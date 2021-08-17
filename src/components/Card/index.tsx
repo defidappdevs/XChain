@@ -9,6 +9,7 @@ const Card = styled.div<any>`
   padding: ${({ padding }) => padding};
   border: ${({ border }) => border};
   border-radius: ${({ borderRadius }) => borderRadius};
+  align-item:flex-start
 `
 export default Card
 
@@ -19,6 +20,50 @@ export const FarmsCard = styled(Card)`
   width:35%;
   margin:7px;
 `
+export const HomeCard = styled(Card)`
+  border: 5px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:auto;
+  width:50%;
+  margin:20px;
+  margin-top:50px;
+`
+export const TvlCard = styled(Card)`
+  border: 5px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:auto;
+  width:50%;
+  margin:20px;
+  margin-top:20px;
+
+`
+export const UnlockCard = styled(Card)`
+  border: 1px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:auto;
+  width:50%;
+  margin:20px;
+  margin-top:50px;
+
+`
+
+export const CrossCard = styled(Card)`
+  border: 5px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:auto;
+  width:46%;
+  margin:20px;
+  margin-top:20px;
+`
+export const HomeAnnocementCard = styled(Card)`
+  border: 5px solid ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
+  height:300px;
+  width:46%;
+  margin:20px;
+  margin-top:20px;
+`
+
 
 
 export const LightCard = styled(Card)`

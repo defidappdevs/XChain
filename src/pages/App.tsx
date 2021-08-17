@@ -24,6 +24,8 @@ import Farms  from './Farms'
 import Pools from './Pools/Pools'
 import Jungles from './Jungles/Jungles'
 import Referals from './Referals/Referals'
+import UnlockReferal from './UnlockReferalRoute'
+import Farmshistory from './Farmshistory'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -41,6 +43,10 @@ const BodyWrapper = styled.div`
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  align-items: flex-start;
+
+  
+
   z-index: 1;
   justify-content: center;
   // background-image: url('/images/group-pancake.svg');
@@ -59,11 +65,15 @@ const BodyWrapper = styled.div`
     // background-position: center 420px, 10% 230px, 90% 230px;
     // background-size: contain, 266px, 266px;
     min-height: 90vh;
+    padding:0px;
+    align-items:center;
+
   }
 `
 
 const Marginer = styled.div`
   margin-top: 5rem;
+
 `
 
 export default function App() {
@@ -135,9 +145,11 @@ export default function App() {
                     <Switch>
                       <Route exact strict path= "/homepage" component={Homepage} />
                       <Route exact strict path="/farms"    component={Farms} />
+                      <Route exact strict path="/farmshistory" component={Farmshistory} />
                       <Route exact strict path= "/pools"  component={Pools} />
                       <Route exact strict path="/jungles" component={Jungles} />
                       <Route exact strict path ="/referals" component={Referals} />
+                      <Route exact strict path ="/unlockreferal" component={UnlockReferal} />
                       <Route exact strict path="/swap" component={Swap} />
                       <Route exact strict path="/find" component={PoolFinder} />
                       <Route exact strict path="/pool" component={Pool} />

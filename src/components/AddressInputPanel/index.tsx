@@ -11,6 +11,7 @@ const { black: Black } = TYPE
 
 const InputPanel = styled.div`
   display: flex;
+  
   flex-flow: column nowrap;
   position: relative;
   border-radius: 1.25rem;

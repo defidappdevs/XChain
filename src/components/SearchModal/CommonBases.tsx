@@ -13,6 +13,7 @@ const BaseWrapper = styled.div<{ disable?: boolean }>`
   border: 1px solid ${({ theme, disable }) => (disable ? 'transparent' : theme.colors.tertiary)};
   border-radius: 10px;
   display: flex;
+  
   padding: 6px;
 
   align-items: center;

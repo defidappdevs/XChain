@@ -1,12 +1,14 @@
 import React from 'react';
+import ReferalsNavContainer from 'components/ReferalsNavContainer';
+import ReferalsCard from 'components/ReferalsCard';
 
-export default class Referals extends React.PureComponent{
-    render(){
-        return(
-            <div className="pagewrapper">
-                Comming Soon
-
-            </div>
-        )
-    }
+const Referals =()=>{
+    return(
+        <>
+        <ReferalsNavContainer />
+        <ReferalsCard />
+        </>
+    )
 }
+
+export default Referals
